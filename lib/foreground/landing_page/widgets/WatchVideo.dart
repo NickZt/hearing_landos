@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hearing_landos/data/general_data.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:hearing_landos/foreground/base_widgets/MiscWidgets.dart';
 
-class WatchVideo extends StatelessWidget {
-
-  launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
+class WatchVideo extends StatelessWidget with MiscWidgets {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,15 +10,14 @@ class WatchVideo extends StatelessWidget {
       color: Colors.black87,
       width: MediaQuery.of(context).size.width,
       child: GestureDetector(
-        onTap: (){
+        onTap: () {
           launchURL(youtubeVideoUrl);
         },
         child: Column(
           children: <Widget>[
             Text(
               "Watch the video",
-              style: TextStyle(
-                  color: Colors.white, fontSize: 30, fontWeight: FontWeight.w400),
+              style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.w400),
             ),
             SizedBox(
               height: 30,
