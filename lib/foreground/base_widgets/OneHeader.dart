@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hearing_landos/data/general_data.dart';
+import 'package:hearing_landos/generated/l10n.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'MiscWidgets.dart';
@@ -19,7 +20,7 @@ class OneHeaderL extends StatelessWidget with MiscWidgets {
             : CrossAxisAlignment.center,
         children: <Widget>[
           Text(
-            appHeading,
+            S.of(context).hearing_appHeading,
             textAlign: MediaQuery.of(context).size.width > 700 ? null : TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 35, fontWeight: FontWeight.w500),
           ),
@@ -27,7 +28,7 @@ class OneHeaderL extends StatelessWidget with MiscWidgets {
             height: 16,
           ),
           Text(
-            appDescription,
+            S.of(context).hearing_appDescription,
             textAlign: MediaQuery.of(context).size.width > 700 ? null : TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w300),
           ),
@@ -38,7 +39,7 @@ class OneHeaderL extends StatelessWidget with MiscWidgets {
             mainAxisAlignment: MediaQuery.of(context).size.width > 700
                 ? MainAxisAlignment.start
                 : MainAxisAlignment.center,
-            children: childrenAppStores(),
+            children: childrenAppStores(playStorelinkUrl:playStoreUrl),
           ),
         ],
       ),
@@ -80,7 +81,7 @@ class SecondHeader extends StatelessWidget {
             height: 20,
           ),
           Text(
-            maintitle,
+            S.of(context).hearing_maintitle,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 25, color: headerColor, fontWeight: FontWeight.w500),
           ),
@@ -88,7 +89,7 @@ class SecondHeader extends StatelessWidget {
             height: 8,
           ),
           Text(
-            maindescription,
+            S.of(context).hearing_maindescription,
             textAlign: TextAlign.center,
             style: TextStyle(fontWeight: FontWeight.w300),
           ),

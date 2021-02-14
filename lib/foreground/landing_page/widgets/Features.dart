@@ -47,7 +47,7 @@ class FeatureTileText extends StatelessWidget with MiscWidgets {
               mainAxisAlignment: MediaQuery.of(context).size.width > 700
                   ? MainAxisAlignment.start
                   : MainAxisAlignment.center,
-              children: childrenAppStores(),
+              children: childrenAppStores(playStorelinkUrl:playStoreUrl),
             )
           ],
         ));

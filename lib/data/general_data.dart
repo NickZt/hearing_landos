@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hearing_landos/generated/l10n.dart';
 import 'package:hearing_landos/utils/TestimonialModel.dart';
 
 import 'model/AppFeatureModel.dart';
@@ -10,18 +11,18 @@ Color headerColor = Colors.black87;
 
 /// One
 String playStoreUrl = "https://play.google.com/store/apps/details?id=ua.zt.mezon.audiology.hearingtest";
-String appHeading = "Affordable mobile hearing testing solution for everyone, from children to adults mostly in underserved Areas:";
-String appDescription = "hearing screening audiometer on a smartphone Download Now!";
+// String appHeading = S.of(context).hearing_appHeading;
+// String appDescription = S.of(context).hearing_appDescription;
 
 /// Two
-String maintitle = "Create, Test, and Share";
-String maindescription = "app checked in place ambient noise level to prevent incorrect results, to help self-administration of the test.";
+// String maintitle = S.of(context).hearing_maintitle;
+// String maindescription = S.of(context).hearing_maindescription;
 
-String closingTitle = "hearing screening audiometer on a smartphone Was Never This EASY";
-String closingDescription = "so what are you waiting for, Download Now";
+// String closingTitle = S.of(context).hearing_closingTitle;
+// String closingDescription = S.of(context).hearing_closingDescription;
 String coverImage = "woman-4581024.jpg";
 
-String finaCalltoAction = "What are you waiting for? Download today!";
+// String finaCalltoAction = S.of(context).hearing_finaCalltoAction;
 String youtubeVideoUrl = "https://www.youtube.com/channel/UC-WROSkR5KGAxMIpf2EaLBQ";
 
 String aboutUsUrl = "https://www.linkedin.com/in/nickzt/";

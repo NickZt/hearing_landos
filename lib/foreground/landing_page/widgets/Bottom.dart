@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hearing_landos/data/general_data.dart';
 import 'package:hearing_landos/foreground/base_widgets/MiscWidgets.dart';
+import 'package:hearing_landos/generated/l10n.dart';
 
 class Bottom extends StatelessWidget with MiscWidgets {
   @override
@@ -13,7 +14,7 @@ class Bottom extends StatelessWidget with MiscWidgets {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Text(
-            closingTitle,
+            S.of(context).hearing_closingTitle,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500, color: Color(0xCC262626)),
           ),
@@ -21,7 +22,7 @@ class Bottom extends StatelessWidget with MiscWidgets {
             height: 8,
           ),
           Text(
-            closingDescription,
+            S.of(context).hearing_closingDescription,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
           ),
@@ -46,7 +47,7 @@ class BelowBottom extends StatelessWidget with MiscWidgets {
       child: Column(
         children: <Widget>[
           Text(
-            finaCalltoAction,
+            S.of(context).hearing_finaCalltoAction,
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 23, fontWeight: FontWeight.w300, color: Colors.white),
           ),
@@ -55,7 +56,7 @@ class BelowBottom extends StatelessWidget with MiscWidgets {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: childrenAppStores(),
+            children: childrenAppStores(playStorelinkUrl: playStoreUrl),
           )
         ],
       ),

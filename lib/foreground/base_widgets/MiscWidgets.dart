@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hearing_landos/data/general_data.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 mixin MiscWidgets {
   launchURL(String url) async {
     if (await canLaunch(url)) {
@@ -11,30 +10,32 @@ mixin MiscWidgets {
     }
   }
 
-  List<Widget> childrenAppStores() {
+  List<Widget> childrenAppStores({String playStorelinkUrl = "", String appleStorelinkUrl = ""}) {
     return <Widget>[
-      Flexible(
-          fit: FlexFit.loose,
-          child: GestureDetector(
-              onTap: () {
-                launchURL(playStoreUrl);
-              },
-              child: Image.asset(
-                "assets/google_play_button.png",
-                width: 150,
-                height: 50,
-              ))),
-      Flexible(
-          fit: FlexFit.loose,
-          child: GestureDetector(
-              onTap: () {
-                launchURL(playStoreUrl);
-              },
-              child: Image.asset(
-                "assets/app_store_badge.png",
-                width: 180,
-                height: 130,
-              )))
+      if (playStorelinkUrl.isNotEmpty)
+        Flexible(
+            fit: FlexFit.loose,
+            child: GestureDetector(
+                onTap: () {
+                  launchURL(playStorelinkUrl);
+                },
+                child: Image.asset(
+                  "assets/google_play_button.png",
+                  width: 150,
+                  height: 50,
+                ))),
+      if (appleStorelinkUrl.isNotEmpty)
+        Flexible(
+            fit: FlexFit.loose,
+            child: GestureDetector(
+                onTap: () {
+                  launchURL(appleStorelinkUrl);
+                },
+                child: Image.asset(
+                  "assets/app_store_badge.png",
+                  width: 180,
+                  height: 130,
+                )))
     ];
   }
 }
