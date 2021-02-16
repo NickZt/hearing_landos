@@ -26,7 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "hearing_closingDescription" : MessageLookupByLibrary.simpleMessage("so what are you waiting for,\n Download Now"),
     "hearing_closingTitle" : MessageLookupByLibrary.simpleMessage("hearing screening audiometer on a smartphone Was Never This EASY"),
     "hearing_finaCalltoAction" : MessageLookupByLibrary.simpleMessage("What are you waiting for? Download today!"),
-    "hearing_maindescription" : MessageLookupByLibrary.simpleMessage("app checked in place ambient noise level to prevent incorrect results, to help self-administration of the test."),
-    "hearing_maintitle" : MessageLookupByLibrary.simpleMessage("Create, Test, and Share")
+    "hearing_maindescription" : MessageLookupByLibrary.simpleMessage("Regular hearing assessments can help you track your progress. Social features can help you refer a friend or therapist to help you stay on track to improve your hearing. This app has been built with precision, keep in mind if you like, the app can check the ambient noise level on the spot to prevent incorrect results to prevent false positive test result."),
+    "hearing_maintitle" : MessageLookupByLibrary.simpleMessage("Stay on track, Check and improve")
   };
 }

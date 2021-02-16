@@ -85,20 +85,20 @@ class S {
     );
   }
 
-  /// `app checked in place ambient noise level to prevent incorrect results, to help self-administration of the test.`
+  /// `Regular hearing assessments can help you track your progress. Social features can help you refer a friend or therapist to help you stay on track to improve your hearing. This app has been built with precision, keep in mind if you like, the app can check the ambient noise level on the spot to prevent incorrect results to prevent false positive test result.`
   String get hearing_maindescription {
     return Intl.message(
-      'app checked in place ambient noise level to prevent incorrect results, to help self-administration of the test.',
+      'Regular hearing assessments can help you track your progress. Social features can help you refer a friend or therapist to help you stay on track to improve your hearing. This app has been built with precision, keep in mind if you like, the app can check the ambient noise level on the spot to prevent incorrect results to prevent false positive test result.',
       name: 'hearing_maindescription',
       desc: '',
       args: [],
     );
   }
 
-  /// `Create, Test, and Share`
+  /// `Stay on track, Check and improve`
   String get hearing_maintitle {
     return Intl.message(
-      'Create, Test, and Share',
+      'Stay on track, Check and improve',
       name: 'hearing_maintitle',
       desc: '',
       args: [],

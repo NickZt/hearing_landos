@@ -11,18 +11,10 @@ Color headerColor = Colors.black87;
 
 /// One
 String playStoreUrl = "https://play.google.com/store/apps/details?id=ua.zt.mezon.audiology.hearingtest";
-// String appHeading = S.of(context).hearing_appHeading;
-// String appDescription = S.of(context).hearing_appDescription;
 
 /// Two
-// String maintitle = S.of(context).hearing_maintitle;
-// String maindescription = S.of(context).hearing_maindescription;
-
-// String closingTitle = S.of(context).hearing_closingTitle;
-// String closingDescription = S.of(context).hearing_closingDescription;
 String coverImage = "woman-4581024.jpg";
 
-// String finaCalltoAction = S.of(context).hearing_finaCalltoAction;
 String youtubeVideoUrl = "https://www.youtube.com/channel/UC-WROSkR5KGAxMIpf2EaLBQ";
 
 String aboutUsUrl = "https://www.linkedin.com/in/nickzt/";
@@ -151,7 +143,7 @@ List<FeatureTileModel> getFeaturesTiles1(){
   //3
   featureTileModel.setImagePath("1611324524091.JPEG");
   featureTileModel.setTitle("See Detailed Result Analysis");
-  featureTileModel.setDescription("All student detailed result analysis is generated and student performance is send to Parents instantly");
+  featureTileModel.setDescription("All detailed assessment results are stored locally. If you like, you can share them using social functions. ");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
@@ -166,16 +158,16 @@ List<FeatureTileModel> getFeaturesTiles2(){
 
   //4
   featureTileModel.setImagePath("header_screenshot.png");
-  featureTileModel.setTitle("5 User Categories");
-  featureTileModel.setDescription("Personalized Interface for all use cases, Either its Teacher, Student Parents Or School Admin");
+  featureTileModel.setTitle("2 User Categories");
+  featureTileModel.setDescription("Personalized Interface for all use cases, Either its User, Friend  Or Doctor");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
 
   //5
   featureTileModel.setImagePath("1611324524091.JPEG");
-  featureTileModel.setTitle("Create Daily Test");
-  featureTileModel.setDescription("Teachers can create daily test to test student performance on a regular basis.");
+  featureTileModel.setTitle("Create reminders");
+  featureTileModel.setDescription("A friend or doctor can create reminders to help with regular assessments or exercises.");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();

@@ -1,4 +1,5 @@
 # hearing_landos
+example of landing page for mobile app. Test approaches to make layout responsive
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
